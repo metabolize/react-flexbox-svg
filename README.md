@@ -2,12 +2,12 @@
 
 [![npm](https://img.shields.io/badge/npm%20install-%40metabolize%2Freact--flexbox--svg-f441b8.svg?style=flat-square)][npm]
 [![version](https://img.shields.io/npm/v/@metabolize/react-flexbox-svg.svg?style=flat-square)][npm]
-[![license](https://img.shields.io/npm/l/react-flexbox-svg.svg?style=flat-square)][npm]
+[![license](https://img.shields.io/npm/l/@metabolize/react-flexbox-svg.svg?style=flat-square)][npm]
 [![build](https://img.shields.io/circleci/project/github/metabolize/react-flexbox-svg.svg?style=flat-square)][build]
 [![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)][prettier]
 
 [npm]: https://www.npmjs.com/package/@metabolize/react-flexbox-svg
-[build]: https://circleci.com/gh/metabolize/react-flexbox-sv/tree/master
+[build]: https://circleci.com/gh/metabolize/react-flexbox-svg/tree/master
 [prettier]: https://prettier.io/
 
 Flexbox for SVG in React, using [css-layout][].
