@@ -7,24 +7,18 @@ jobs:
     steps:
       - checkout
 
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-
       - run:
           name: Install dependencies
-          command: npm install
-
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          command: npm ci
 
       - run:
           name: Check that the build runs
           command: npm run build
+
+      - run:
+          name: Check that the example build runs
+          command: npm run build:examples
+          when: always
 
       - run:
           name: Check lint
@@ -33,5 +27,5 @@ jobs:
 
       - run:
           name: Check prettier
-          command: npm run prettier
+          command: npm run prettier:check
           when: always

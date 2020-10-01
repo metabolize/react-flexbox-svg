@@ -101,9 +101,7 @@ const Layoutable = (
     }
 
     render() {
-      const transformation = `translate(${this.state.layout.left},${
-        this.state.layout.top
-      })`
+      const transformation = `translate(${this.state.layout.left},${this.state.layout.top})`
 
       const layoutRect = (
         <LayoutRect
