@@ -23,7 +23,7 @@ const setStyle = (style = {}, styles, path = []) => {
 
   return {
     path: path.slice(),
-    setStyle: function(childStyle) {
+    setStyle: function (childStyle) {
       return setStyle(childStyle, styles, path.slice())
     },
   }
