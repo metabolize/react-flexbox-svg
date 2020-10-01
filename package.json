@@ -13,6 +13,9 @@
     "start": "webpack-dev-server --content-base examples/ --hot --inline -d",
     "reopen": "opn http://localhost:8080",
     "open": "run-p start reopen",
+    "prebuild:examples": "rimraf build && mkdir -p build/assets",
+    "build:examples": "webpack",
+    "postbuild:examples": "cp examples/* build && cp dist/bundle.js build/assets/",
     "build": "rimraf lib && babel src --out-dir lib",
     "prepare": "npm run build"
   },
